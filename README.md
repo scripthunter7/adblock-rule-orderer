@@ -145,6 +145,17 @@ When ordering rules, we should consider the following things:
     (because there is an empty / separator line between the comment and the
     rule)
 
+#### Sometimes order matters
+
+For scriptlet / JS rules, order matters, e.g.:
+
+```adblock
+#%#//scriptlet('set-constant', 'foo', 'emptyObj')
+#%#//scriptlet('set-constant', 'foo.bar', 'true')
+```
+
+### Ordering rules
+
 Ordering rules in a block based on the following aspects:
 
 - Rule category
